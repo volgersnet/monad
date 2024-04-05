@@ -1,9 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Volgersnet\Monad;
+namespace Volgersnet\Monad\Test;
 
 use PHPUnit\Framework\TestCase;
 use stdClass;
+use Volgersnet\Monad\Chain;
 use Volgersnet\Monad\Exceptions\PropertyBindingException;
 
 class ChainTest extends TestCase

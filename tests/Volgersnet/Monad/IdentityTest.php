@@ -1,8 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Volgersnet\Monad;
+namespace Volgersnet\Monad\Test;
 
 use PHPUnit\Framework\TestCase;
+use Volgersnet\Monad\Identity;
 
 class IdentityTest extends TestCase
 {
