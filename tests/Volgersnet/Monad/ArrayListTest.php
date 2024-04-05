@@ -1,8 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Volgersnet\Monad;
+namespace Volgersnet\Monad\Test;
 
 use PHPUnit\Framework\TestCase;
+use Volgersnet\Monad\ArrayList;
+use Volgersnet\Monad\Maybe;
+use Volgersnet\Monad\Monad;
 
 class ArrayListTest extends TestCase
 {

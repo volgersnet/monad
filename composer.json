@@ -26,6 +26,11 @@
       "Volgersnet\\Monad\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Volgersnet\\Monad\\Test\\": "tests/"
+    }
+  },
   "scripts": {
     "fix": "./vendor/bin/php-cs-fixer fix",
     "stan": "./vendor/bin/phpstan analyse --debug --level 8 > phpstan-analysis.txt || exit 0",
