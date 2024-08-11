@@ -28,7 +28,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Volgersnet\\Monad\\Test\\": "tests/"
+      "Volgersnet\\Monad\\Test\\": "tests"
     }
   },
   "scripts": {

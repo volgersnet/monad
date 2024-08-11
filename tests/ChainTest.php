@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Volgersnet\Monad\Test;
 
@@ -30,8 +32,8 @@ class ChainTest extends TestCase
 
     public function testSetter(): void
     {
-        $object       = new stdClass();
-        $object->test = true;
+        $object                  = new stdClass();
+        $object->test            = true;
         Chain::of($object)->test = false;
 
         $this->assertFalse(Chain::of($object)->test->value());
@@ -40,15 +42,15 @@ class ChainTest extends TestCase
     public function testExceptionOnUnknownProperty(): void
     {
         $this->expectException(PropertyBindingException::class);
-        $chain = Chain::of('');
+        $chain                      = Chain::of('');
         $chain->nonExistingProperty = false;
     }
 
     public function testIssetPropertyExists(): void
     {
-        $chain = Chain::of(new stdClass());
+        $chain       = Chain::of(new stdClass());
         $chain->name = 'test';
-        $result = $chain->__isset('name');
+        $result      = $chain->__isset('name');
         $this->assertTrue($result);
 
         $result = $chain->__isset('unknown');
